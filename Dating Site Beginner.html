@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Dating Website</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Find Your Perfect Match</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Register</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section class="hero">
+			<h2>Join Our Dating Site Today</h2>
+			<p>Find the love of your life with our matchmaking services. Register now for just 1000 rupees!</p>
+			<a href="#" class="cta">Register Now</a>
+		</section>
+		
+		<section class="features">
+			<h2>Why Choose Us?</h2>
+			<ul>
+				<li><i class="fa fa-check"></i> Safe and Secure</li>
+				<li><i class="fa fa-check"></i> Easy to Use</li>
+				<li><i class="fa fa-check"></i> Affordable Pricing</li>
+				<li><i class="fa fa-check"></i> Thousands of Potential Matches</li>
+			</ul>
+		</section>
+		
+		<section class="registration">
+			<h2>Register Now</h2>
+			<form action="#" method="POST">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				
+				<label for="gender">Gender:</label>
+				<select id="gender" name="gender" required>
+					<option value="">Select Gender</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+				
+				<label for="age">Age:</label>
+				<input type="number" id="age" name="age" required>
+				
+				<label for="interests">Interests:</label>
+				<textarea id="interests" name="interests" required></textarea>
+				
+				<button type="submit">Register Now</button>
+			</form>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; 2023 My Dating Website. All rights reserved.</p>
+	</footer>
+	
+	<script src="scripts.js"></script>
+</body>
+</html>

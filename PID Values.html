@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function slider1Change(val1) {
+	// Use Ajax post to send the adjusted value to PHP or MySQL storage
+	document.getElementById('sliderStatus1').innerHTML = val1;
+}
+
+function slider2Change(val2) {
+	// Use Ajax post to send the adjusted value to PHP or MySQL storage
+	document.getElementById('sliderStatus2').innerHTML = val2;
+}
+function slider3Change(val3) {
+	// Use Ajax post to send the adjusted value to PHP or MySQL storage
+	document.getElementById('sliderStatus3').innerHTML = val3;
+}
+
+</script>
+</head>
+<body>
+<h2>Kp</h2>
+<input type="range" min="0" max="100" value="0.5" step="0.001" onMousemove="slider1Change(this.value)" />
+<br /><br />
+Slider Value = <span id="sliderStatus1">50</span>
+
+<br><br>
+
+<h2>Ki</h2>
+<input type="range" min="0" max="100" value="0.5" step="0.001" onMousemove="slider2Change(this.value)" />
+<br /><br />
+Slider Value = <span id="sliderStatus2">50</span>
+<h2>Kd</h2>
+<input type="range" min="0" max="100" value="0.5" step="0.001" onMousemove="slider3Change(this.value)" />
+<br /><br />
+Slider Value = <span id="sliderStatus3">50</span>
+</body>
+</html>
